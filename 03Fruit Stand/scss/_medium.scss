@@ -1,0 +1,36 @@
+/*-- HEADER STYLESHEET --*/
+.logo {
+	padding: 1em .75em;
+}
+	header h1{padding-bottom: .1em;}
+	
+	.slogan {display: inline-block;}
+
+header h2{}
+
+/*-- NAVIGATION STYLESHEET --*/
+nav {
+	ul li {
+	width: 25%; 
+	background-color: $secondColor;
+	border-bottom: none; 
+	border-right: solid 1px $primColor;
+}/*end ul li*/
+	
+}/*END NAVIGATION*/
+
+/*-- BODY STYLESHEET --*/
+main {
+	background-color: #fff;
+	figure.photo {
+		width: 50%-$gutterdbl;
+		margin: .5rem $gutter; 
+		float: left;
+	}
+
+
+}/*--END MAIN STYLES--*/
+
+
+
+

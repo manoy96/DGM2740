@@ -1,0 +1,43 @@
+/*-- HEADER STYLESHEET --*/
+.logo {
+	padding: 1em .75em;
+}
+	header h1{padding-bottom: .1em;}
+	
+	.slogan {display: inline-block;}
+
+header h2{
+	color: #fff; 
+	font-family: Tahoma, Geneva, sans-serif; 
+	font-size: 24px; 
+	font-weight: lighter; 
+	padding: 0 .25em .75em 0;
+}
+
+/*-- NAVIGATION STYLESHEET --*/
+nav {
+	background-color: $navColor;
+}
+nav li {
+	width: 25%; 
+	background-color: $navColor; 
+	border-bottom: none; 
+	border-right: solid 1px $headColor;
+}
+li:last-child {
+	border-right: none;
+}
+
+
+/*-- BODY STYLESHEET --*/
+main {
+	background-color: #fff;
+}
+	.hero_medium {width: 100%;}
+main img.hero_large {display: none;}
+main img.hero_small {display: none;}
+main img.hero_medium {display: inline;}
+
+	img.scale {width: 50%; float: right; margin: 0 0 .5em 1em;}
+
+	

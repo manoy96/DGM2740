@@ -1,0 +1,28 @@
+
+/*-- NAVIGATION STYLESHEET --*/
+
+nav {
+	ul {
+	margin-left: $gutter;
+	}
+	ul li {
+	width: auto; 
+	}
+	ul li a {
+	padding: .5rem 1rem;
+	}
+
+}/*--END NAVIGATION*/
+
+/*-- BODY STYLESHEET --*/
+main {
+	background-color: #fff;
+	figure.photo {
+		width: 25%-$gutterdbl;
+		margin: .5rem $gutter; 
+		float: left;
+	}
+
+
+}/*--END MAIN STYLES--*/
+

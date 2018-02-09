@@ -1,0 +1,32 @@
+/*
+Error: Invalid CSS after "...������I���╠���": expected "{", was "}��������������..."
+        on line 1 of C:\Users\manuel\Documents\2740\Websites\public_html\02Science Museum\file\__MACOSX\demos\start\scss\._styles.scss
+
+1: ����Mac OS X        ����	���2�������I��������������������������������������ATTR������I���╠���}������������������╠���*��$com.apple.metadata:_kMDItemUserTags�����÷���S��com.dropbox.attributes���bplist00á����������������������������	x£½VJ)╩/H╩»êO╦╠I═Lë╧╔ON╠Q▓R¿V╩ML╬╚╠ë%ûöüàRKü
+2: Ñè`'│¼Lφ╠ê*º░┤`»\╖╘¼gG[[Ñ┌┌Z�╚╙|
+
+Backtrace:
+C:\Users\manuel\Documents\2740\Websites\public_html\02Science Museum\file\__MACOSX\demos\start\scss\._styles.scss:1
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:665:in `block'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:674:in `block_contents'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/bin/sass:13:in `<top (required)>'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:22:in `load'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...������I���╠���\": expected \"{\", was \"}��������������...\"\A         on line 1 of C:\Users\manuel\Documents\2740\Websites\public_html\02Science Museum\file\__MACOSX\demos\start\scss\._styles.scss\A \A 1: ����Mac OS X        ����	���2�������I��������������������������������������ATTR������I���╠���}������������������╠���*��$com.apple.metadata:_kMDItemUserTags�����÷���S��com.dropbox.attributes���bplist00á����������������������������	x£½VJ)╩/H╩»êO╦╠I═Lë╧╔ON╠Q▓R¿V╩ML╬╚╠ë%ûöüàRKü\A 2: Ñè`'│¼Lφ╠ê*º░┤`»\╖╘¼gG[[Ñ┌┌Z�╚╙|"; }

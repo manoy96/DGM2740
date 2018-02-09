@@ -1,0 +1,14 @@
+@media only screen and (min-width: 1140px) {
+
+	h1{color: orange;}
+
+
+
+
+/*-- BODY STYLESHEET --*/
+main img.mobile {display: none;}
+main img.tablet {display: none;}
+main img.desk {display: inline;}
+	
+
+}/* end media query*/
