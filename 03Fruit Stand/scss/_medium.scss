@@ -6,7 +6,6 @@
 	
 	.slogan {display: inline-block;}
 
-header h2{}
 
 /*-- NAVIGATION STYLESHEET --*/
 nav {
@@ -23,7 +22,7 @@ nav {
 main {
 	background-color: #fff;
 	figure.photo {
-		width: 50%-$gutterdbl;
+		width: 33%-$gutterdbl;
 		margin: .5rem $gutter; 
 		float: left;
 	}

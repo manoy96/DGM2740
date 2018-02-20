@@ -7,9 +7,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*-- BODY STYLESHEET --*/
 body {
-	max-width: 1140px;
     width: 100%;
-    margin: 0;
+    margin: auto;
     padding: 0;
     overflow-x: hidden; 
 	background-color: $bodyColor;
@@ -66,7 +65,7 @@ nav {
 	margin:auto; 
 	background-color: $secondColor;
 	ul li {
-	width: 50%; 
+	width: 25%; 
 	float: left; 
 	background-color: $secondColor; 
 	border-bottom: solid 1px rgba(0,0,0,0.3);
@@ -100,7 +99,7 @@ nav {
 
 main {
 	margin: auto; 
-	max-width: 1200px; 
+	max-width: 1140px; 
 	background-color: $bodyColor;
 
 	h1 {
@@ -110,8 +109,9 @@ main {
 	}/*end h1*/
 	
 	figure.photo {
-		width: 100%-$gutterdbl;
+		width: 50%-$gutterdbl;
 		margin: .5rem $gutter; 
+		float: left;
 	}
 	figure.photo img {
 		width: 100%;
@@ -129,7 +129,7 @@ main {
 /*-- FOOTER STYLESHEET --*/
 footer {
 	width: 100%;
-	background-color: $primColor;
+	background-color: $secondColor;
 	margin: auto;
 	
 	p {
