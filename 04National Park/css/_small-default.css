@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$bodyColor".
-        on line 15 of C:\Users\manuel\Documents\2740\Websites\public_html\03Fruit Stand\scss\_small-default.scss
+Error: Undefined variable: "$defaultFont".
+        on line 9 of C:\Users\manuel\Documents\_dgm 2740\Websites\public_html\04National Park\scss\_small-default.scss
 
-10: 	max-width: 1140px;
-11:     width: 100%;
-12:     margin: 0;
-13:     padding: 0;
-14:     overflow-x: hidden; 
-15: 	background-color: $bodyColor;
-16: 	font-size: 16px;
-17: 	font-family: $defaultFont;
-18: 	font-weight: $normalWeight;
-19: }
-20: 
+4: /*  apply a natural box layout model to all elements  *\/
+5: * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+6: 
+7: /*  ----------------------- BODY --------------------------- *\/
+8: body{
+9:     font-family: $defaultFont;
+10:     font-weight: $normalWeight;
+11:     font-size: 16px;
+12: }
+13: 
+14: 
 
 Backtrace:
-C:\Users\manuel\Documents\2740\Websites\public_html\03Fruit Stand\scss\_small-default.scss:15
+C:\Users\manuel\Documents\_dgm 2740\Websites\public_html\04National Park\scss\_small-default.scss:9
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -61,4 +61,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bodyColor\".\A         on line 15 of C:\Users\manuel\Documents\2740\Websites\public_html\03Fruit Stand\scss\_small-default.scss\A \A 10: 	max-width: 1140px;\A 11:     width: 100%;\A 12:     margin: 0;\A 13:     padding: 0;\A 14:     overflow-x: hidden; \A 15: 	background-color: $bodyColor;\A 16: 	font-size: 16px;\A 17: 	font-family: $defaultFont;\A 18: 	font-weight: $normalWeight;\A 19: }\A 20: "; }
+  content: "Error: Undefined variable: \"$defaultFont\".\A         on line 9 of C:\Users\manuel\Documents\_dgm 2740\Websites\public_html\04National Park\scss\_small-default.scss\A \A 4: /*  apply a natural box layout model to all elements  */\A 5: * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }\A 6: \A 7: /*  ----------------------- BODY --------------------------- */\A 8: body{\A 9:     font-family: $defaultFont;\A 10:     font-weight: $normalWeight;\A 11:     font-size: 16px;\A 12: }\A 13: \A 14: "; }

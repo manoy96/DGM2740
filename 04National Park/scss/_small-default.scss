@@ -13,12 +13,16 @@ body{
 
 
 /*  ----------------------- HEADER --------------------------- */
-div#headWrapper {
-	background-image: url(../images/header0560.jpg);
+div#headerWrap {
+	background-color: $primaryColor;
 }
+
 header {
-    color: $secondaryColor;
 	height: 110px;
+	background-image: url(../images/header0560.jpg);
+	position: relative;
+    
+    color: $secondaryColor;
     padding: 1rem $gutter;
     
     form {float:right;}
@@ -31,19 +35,22 @@ header {
         transition: width .5s;
     }
     form input:focus{width:8rem;}
+	
 	h1, h2 {
 		padding-left: $gutter;
+		font-weight: $normalWeight;
 		margin-left: 100px;
 	}
+    
+	figure.logo {position: absolute; bottom: 0; left: 2%;}
+	
     h1 {
-        font-size: 2rem;
-        font-weight: $normalWeight;
 		padding-top: 35px;
+        font-size: 1.6rem;
     } // end of h1
     
     h2 {
-        font-size: .8rem;
-        font-weight: $normalWeight;
+        font-size: 1.4rem;
     } // end of h1
     
 } // end of header
@@ -51,11 +58,12 @@ header {
 
 
 /*  ----------------------- NAVIGATION --------------------------- */
-div#navWrapper {
+div#navWrap {
 	background-color: $secondaryColor;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 nav {
-    background-color: $secondaryColor;
+    
     
     ul li {
         float: left;
@@ -91,7 +99,7 @@ nav {
 
 /*  ----------------------- MAIN --------------------------- */
 main {
-    background-color: #ffffff;
+    
     figure.banner {width: 100%;}
     figure.banner img {width: 100%;}
     
@@ -137,18 +145,41 @@ main {
     
     div.pop {
         background-color: $accent;
+		background-repeat: no-repeat;
+		width: 100%;
         text-align: center;
         clear: both;
         padding: 1rem 0;
-        .title {font-size: 2.5rem;}
-        .subtitle {font-size: 2rem; font-weight: $boldWeight;}
+		
+        .title {color: $secondaryColor;font-size: 2rem;}
+        .subtitle {color: $secondaryColor; font-size: 1.5rem; font-weight: $boldWeight;}
         .copy {padding: .5rem 0;}
         .copy span {
             font-size: 3rem; 
             color: $primaryColor; 
             font-weight: $boldWeight;
         } // end span
-    }
+		form#form1 {
+		}
+		form#form1 .inputTextBox {
+			width: 100%-$gutter;
+			height: 40px;
+			fon-size: 24px;
+			padding-left: 15px;
+			margin: 5px 0;
+			border: none;
+			border-radius: 15px;
+		}
+		form#form1 .Submit {
+			background-color: #FFB03B;
+			font-size: 24px;
+			color: $fontColor;
+			border: none;
+			border-radius: 7px;
+			width: 100%-$gutter;
+			height: 40px;
+		}
+    }/*------end POP*/
     
     
 } // end main
@@ -167,8 +198,8 @@ main {
 
 
 /*  ----------------------- FOOTER --------------------------- */
-div#footWrapper {
-	background-color: $secondaryColor;
+div#footWrap {
+	background-color: $primaryColor;
 }
 footer {
     width: 100%;
@@ -176,7 +207,7 @@ footer {
     
     p {
         text-align: center;
-        color: $fontColor;
+        color: $secondaryColor;
         padding: .75rem 0;
         font-size: .9rem;
     } // end p

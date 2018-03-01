@@ -1,18 +1,16 @@
 /*  ----------------------- BODY --------------------------- */
-header, nav, main, footer {
-	max-width: 60rem;
-	margin: 0 auto;
-}
-body {
-//	background: url(../images/back.jpg) no-repeat center top;
-}
+main {max-width: 60rem; margin: 0 auto;}
+
+
+
 /*  ----------------------- HEADER --------------------------- */
-div#headWrapper {
+header {
+	height: 130px;
 	background-image: url(../images/header1600.jpg), url(../images/headerRepeat.jpg);
 	background-repeat: no-repeat, repeat-x;
-} 
-
-
+	h1{padding-top: 50px;}
+}
+ 
 
 /*  ----------------------- NAVIGATION --------------------------- */
 nav {
@@ -35,10 +33,7 @@ nav {
 
 
 /*  ----------------------- MAIN --------------------------- */
-
 main {
-	margin: 0 auto;
-	box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
     figure.photo {width: 25%-$gutterdbl; float: left; }
     
     
@@ -49,11 +44,11 @@ main {
     
     div.blog article:nth-child(2n+1) { clear: none;}
     div.blog article:nth-child(3n+1) { clear: left;}
+	
+	div.pop {
+        .title {font-size: 3.5rem;}
+        .subtitle {font-size: 3rem;}
+    }
     
-	section {
-	max-width: 60rem;
-	margin: 0 auto;
-		
-}
     
 } // end main
