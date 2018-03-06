@@ -1,0 +1,43 @@
+
+
+
+
+
+/* ------------- HEADER ------------- */
+header {
+    h1{padding-top: 50px;}
+}
+
+
+/* ------------- MAIN ------------- */
+main {
+    max-width: 100em;
+    margin: 0 auto;
+
+	article.multiCol {
+		column-count: 2;
+		-webkit-column-count: 2; /*Chrome, Safari, Opera*/
+		-moz-column-count: 2; /*Firefox*/
+		
+		column-rule: 1px solid $secondaryColor;
+		-webkit-column-rule: 1px solid $secondaryColor;/*Chrome, Safari, Opera*/
+		-moz-column-rule: 1px solid $secondaryColor;/*Firefox*/
+		
+		
+		column-gap: $gutter;
+		-webkit-column-gap: $gutter;/*Chrome, Safari, Opera*/
+		-moz-column-gap: $gutter;/*Firefox*/
+	}
+    
+    figure.photoB {
+		width: 60%;
+		float: right;
+	}
+    
+    
+    
+    
+    
+    
+    
+}/*-------------END MAIN----------*/
