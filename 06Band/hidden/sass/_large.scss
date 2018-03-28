@@ -1,0 +1,41 @@
+
+/* ------------- HEADER ------------- */
+header {
+	background-image: url(../images/header1600.png)/*,url(../images/headerRepeat.jpg)*/;
+	/*background-repeat: no-repeat, repeat-x;
+	background-color: #9b98b0;*/
+}
+
+
+
+
+
+
+/*  ------------- NAV -------------  */
+nav {
+	ul {
+		margin-left: 2%;
+		border-left: 1px solid rgba(0,0,0,0.3);
+	}
+	ul li {
+		width: 10%;
+		
+	}// end li
+	ul li:last-child {border-right: 1px solid rgba(0,0,0,0.3);}
+	ul li a {
+		padding: .5rem 1rem;
+	} // and a
+} // end nav
+
+
+
+
+
+/* ------------- MAIN ------------- */
+
+
+article.multiCol {
+		column-count: 3;
+		-webkit-column-count: 3; /*Chrome, Safari, Opera*/
+		-moz-column-count: 3; /*Firefox*/
+}/*---end article*/
