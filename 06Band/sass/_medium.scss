@@ -1,11 +1,27 @@
 /*-----HEADER SOCIAL ICONS-----*/
 header {
 	
-    
-    
-    
-    
-
+	.header{
+		max-width: 75rem;
+		margin: auto;
+	ul.social{
+		float: right;
+		li a{
+			font-size: 2.5rem;
+		}
+		
+		
+		
+	}
+		.titleSlogan{
+			
+			h2{
+				visibility: visible;
+				font-size: 1.12rem;
+    		    font-weight: $normalWeight;
+			}
+		}
+	}/*END .HEADER*/
 } // end header
 
 /*  ------------- MAIN -------------  */

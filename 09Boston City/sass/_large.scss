@@ -1,0 +1,44 @@
+/* ------------- BODY ------------- */
+body{
+	max-width: 64rem;
+	margin: auto;
+	box-shadow: 0 -15px 15px 12px rgb(69, 69, 69);
+}
+
+
+
+
+
+/* ------------- HEADER ------------- */
+header {
+	background-image: url(../images/header1600.jpg),url(../images/headerRepeat.jpg);
+	background-repeat: no-repeat, repeat-x;
+	background-color: #9b98b0;
+}
+
+
+/* NAVigation  */
+nav {
+	max-width: 64rem;
+	margin: 0 auto;
+	ul li a span {display: inline;}
+}
+
+
+
+
+
+
+/* ----------------PLAN YOUR VISIT----------------- */
+div.plan{
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin: 0;
+	
+	
+	
+	}//END.PLAN
+
+	div.planVisit{
+		h2{
+		}
+	}

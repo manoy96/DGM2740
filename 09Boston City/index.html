@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Boston City</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link href="slick/slick.css" rel="stylesheet">
+<link href="slick/slick-theme.css" rel="stylesheet">
+<link href="css/fontawesome-all.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    
+</head>
+<body id="top">
+		
+	<div class="smallNavBar"><a class="hamOpen" href="#footerLink"></a></div>
+    
+<!-- HEADER STARTS HERE -->
+<header>
+		<h1>Boston City</h1>
+		<h2>The Cradle of Liberty</h2>
+</header>
+    
+    
+    
+
+    
+    
+<!-- MAIN STARTS HERE -->
+	<main>
+
+		<div class="mySlider">
+			<picture>
+				<source srcset="images/slider01h.jpg" media="(min-width: 29.25rem)">
+				<img srcset="images/slider01s.jpg" alt="slider">
+			</picture>
+
+			<picture>
+					<source srcset="images/slider02h.jpg" media="(min-width: 29.25rem)">
+					<img srcset="images/slider02s.jpg" alt="slider">
+				</picture>
+
+				<picture>
+						<source srcset="images/slider03h.jpg" media="(min-width: 29.25rem)">
+						<img srcset="images/slider03s.jpg" alt="slider">
+					</picture>
+
+					<picture>
+							<source srcset="images/slider04h.jpg" media="(min-width: 29.25rem)">
+							<img srcset="images/slider04s.jpg" alt="slider">
+						</picture>
+
+						<picture>
+								<source srcset="images/slider05h.jpg" media="(min-width: 29.25rem)">
+								<img srcset="images/slider05s.jpg" alt="slider">
+							</picture>
+	</div><!-- end slider -------------------- -->
+
+
+
+
+<!-- Plan Your Visit -->
+
+<h1>Plan Your Visit</h1>
+
+<div class="plan">
+	<div class="planVisit">
+			<img src="images/places.jpg">
+		<div class="overlay">
+			<div class="title">
+				<a><h1><i class="fa fa-map-marker"></i></h1></a>
+				<h2>Places to See</h2> 
+			</div>
+		</div>	 
+	</div>
+
+	<div class="planVisit">
+			<img src="images/trans.png">
+		<div class="overlay">
+			<div class="title">
+				<a><h1><i class="fa fa-bicycle"></i></h1></a>
+				<h2>Find Your Way Around</h2>
+			</div>
+		</div>	 
+	</div>
+
+	<div class="planVisit">
+			<img src="images/food.jpg">
+		<div class="overlay">
+			<div class="title">
+				<a><h1><i class="fa fa-spoon"></i></h1></a>
+				<h2>Get Some Grub</h2>
+			</div>
+		</div>	 
+	</div>
+
+	<div class="planVisit">
+			<img src="images/events.jpg">
+		<div class="overlay">
+			<div class="title">
+				<a><h1><i class="fa fa-calendar-check-o"></i></h1></a>
+				<h2>Catch a Show</h2>
+			</div>
+		</div>	 
+	</div>
+</div>
+
+	
+    
+</main>
+    
+<!-- FOOTER STARTS HERE -->  
+    <footer>
+    <p>&copy; 2018 Manuel Espinoza </p>
+    </footer>
+    
+    
+    
+    
+    <!-- NAV STARTS HERE -->
+	<nav class="clearfix" id="footerLink">
+		<div><a class="hamClose" href="#top"></a></div>
+   		<ul id="primaryNav">
+			<li class="active"><a href="index.html"><span>PLAN YOUR VISIT </span></a></li>
+				<li><a href="#"><span>PLACES TO SEE </span></a>
+				<ul>
+					<li><a href="index.html">Fenway Park</a></li>
+					<li><a href="index.html">Faneuil Hall</a></li>
+					<li><a href="index.html">New England Aquarium</a></li>
+					<li><a href="index.html">Museum of Fine Arts</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><span>FIND YOUR WAY AROUND </span></a>
+			<ul>
+					<li><a href="index.html">Subway</a></li>
+					<li><a href="index.html">Bus</a></li>
+				</ul>
+			</li>
+			<li><a href="index.html"><span>HOTELS </span></a></li>
+			<li><a href="index.html"><span>SHOPPING </span></a></li>
+			<li><a href="index.html"><span>GALLERY </span></a></li>
+		</ul>
+		
+	</nav>
+
+    
+    
+    
+    
+	<script src="slick/jquery-3.3.1.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.mySlider').slick({
+				autoplay:true,
+				dots:true,
+				arrows:false,
+				cssEase: 'ease-out',
+				speed:2000,
+				autoplaySpeed:8000
+
+			});
+		});
+	</script>
+    
+</body>
+</html>

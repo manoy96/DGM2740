@@ -1,0 +1,387 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+w3
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* BODY  */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px; }
+
+/* HEADER  */
+header {
+  max-width: 64rem;
+  margin: auto;
+  position: relative;
+  height: 110px;
+  background-image: url(../images/header0560.jpg); }
+  header img {
+    padding: 1rem 0 .5rem 2%;
+    display: block; }
+  header h1, header h2 {
+    color: #fff;
+    text-shadow: 5px 5px 10px gray;
+    margin-left: 2%;
+    padding-left: 2%;
+    font-weight: 300; }
+  header h1 {
+    font-size: 3rem;
+    padding-top: 10px;
+    margin-bottom: .25em; }
+  header h2 {
+    font-size: 1.75rem; }
+
+/* NAVigation  */
+div.smallNavBar {
+  background-color: #333; }
+
+nav {
+  background: #333;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #333 0%, #fff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #333 0%, #fff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #333 0%, #fff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$endColor',GradientType=0 );
+  /* IE6-9 */
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  background-color: #333; }
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    padding: .6rem 2%;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3); }
+  nav ul li ul li a {
+    padding-left: 8%; }
+  nav ul li.active a {
+    background-color: #A6A5A1; }
+
+.ham, .hamOpen, .hamClose {
+  display: block;
+  width: 7rem;
+  height: 2.75rem;
+  background-color: #A6A5A1;
+  background-repeat: no-repeat;
+  background-position: 2vw center; }
+
+.hamOpen {
+  background-image: url(../images/menuOpenWhite.png); }
+
+.hamClose {
+  background-image: url(../images/menuCloseWhite.png); }
+
+/* MAIN  */
+main {
+  padding: 0 0;
+  max-width: 64rem;
+  margin: auto; }
+  main h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.75em 2%;
+    color: #A6A5A1; }
+  main p {
+    line-height: 130%;
+    margin: 0.25rem 2% 0 2%;
+    font-family: "Roboto", sans-serif; }
+  main figure.w100 img {
+    width: 100%; }
+  main figure.w100 {
+    width: 100%; }
+  main .box, main .boxA, main .boxB {
+    margin-top: 1rem;
+    padding: 2rem 2%;
+    text-align: center;
+    line-height: 140%;
+    font-size: 2rem;
+    color: #fff; }
+  main .boxA {
+    background-color: #333A42; }
+  main .boxB {
+    background-color: #A6A5A1; }
+  main .box span, main .boxA span, main .boxB span {
+    display: block;
+    font-size: 1rem;
+    line-height: 120%; }
+
+/* ---------------SLICK SLIDER------------ */
+div.mySlider div {
+  width: 100%; }
+  div.mySlider div img {
+    width: 100%; }
+
+/* ----------------PLAN YOUR VISIT----------------- */
+div.plan {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  justify-items: center;
+  align-items: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  transition: all 8s ease-in; }
+  div.plan .places {
+    width: 80%;
+    background-color: #333A42;
+    padding: 3rem; }
+    div.plan .places h1, div.plan .places h2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+
+/* end plan */
+.planVisit {
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #333A42; }
+  .planVisit img {
+    opacity: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease; }
+  .planVisit .title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden; }
+    .planVisit .title a {
+      font-size: 24px;
+      display: block;
+      text-align: center;
+      padding: 10px;
+      word-break: break-all;
+      cursor: pointer; }
+  .planVisit .overlay {
+    opacity: 1; }
+  .planVisit h1 {
+    margin: 0; }
+  .planVisit h2 {
+    font-size: 24px;
+    font-family: "Raleway", sans-serif; }
+
+.planVisit:hover img {
+  opacity: 1; }
+.planVisit:hover .overlay {
+  opacity: 1; }
+.planVisit:hover .title {
+  opacity: 0; }
+
+/* FOOTER  */
+footer {
+  max-width: 64rem;
+  padding: .5em;
+  margin: 1em auto;
+  background-color: #333;
+  color: #F1ECE9;
+  padding: 2rem 0;
+  text-align: center; }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 35em) {
+  /* ------------- HEADER ------------- */
+  header {
+    margin-top: 2.14rem;
+    height: 130px;
+    background-image: url(../images/header1024.jpg); }
+    header h1 {
+      padding-top: 25px; }
+
+  /* NAVigation  */
+  a.hamOpen, a.hamClose {
+    display: none; }
+
+  nav {
+    position: absolute;
+    top: 0;
+    height: auto; }
+    nav ul {
+      margin-left: 2%;
+      border-left: 1px solid rgba(0, 0, 0, 0.2); }
+    nav ul li {
+      float: left; }
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      background: none;
+      font-size: .9em;
+      padding: .7em .9em;
+      /*transition*/
+      -webkit-transition: color 0.3s linear;
+      transition: color 0.3s linear; }
+    nav ul li a:hover {
+      background: #262626; }
+    nav ul li ul {
+      /*rules for the sub menu items*/
+      z-index: 99;
+      position: absolute;
+      background-color: #4d4d4d;
+      left: -999em;
+      /* pushes the menu way off to the side */
+      width: 10em; }
+    nav ul li ul li {
+      /* overides the float and line from the parent ul */
+      float: none;
+      border-right: none; }
+    nav ul li a span {
+      display: none; }
+    nav ul li:hover ul {
+      /* this displays the menus as drop downs  */
+      left: auto;
+      margin-left: 0; }
+
+  /* MAIN  */
+  main h1 {
+    font-size: 5rem; }
+  main .box, main .boxA, main .boxB {
+    font-size: 2rem; }
+  main .box span, main .boxA span, main .boxB span {
+    font-size: 1.5rem; }
+
+  /* ----------------PLAN YOUR VISIT----------------- */
+  div.plan {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2%; }
+
+  div.planVisit {
+    width: 100%; }
+    div.planVisit h2 {
+      white-space: normal; } }
+@media only screen and (min-width: 64em) {
+  /* ------------- BODY ------------- */
+  body {
+    max-width: 64rem;
+    margin: auto;
+    box-shadow: 0 -15px 15px 12px #454545; }
+
+  /* ------------- HEADER ------------- */
+  header {
+    background-image: url(../images/header1600.jpg), url(../images/headerRepeat.jpg);
+    background-repeat: no-repeat, repeat-x;
+    background-color: #9b98b0; }
+
+  /* NAVigation  */
+  nav {
+    max-width: 64rem;
+    margin: 0 auto; }
+    nav ul li a span {
+      display: inline; }
+
+  /* ----------------PLAN YOUR VISIT----------------- */
+  div.plan {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0; } }
+
+/*# sourceMappingURL=styles.css.map */

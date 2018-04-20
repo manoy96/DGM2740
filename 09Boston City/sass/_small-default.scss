@@ -1,0 +1,238 @@
+w3/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+}
+
+
+/* HEADER  */
+header {
+	max-width:64rem;
+	margin: auto;
+	position: relative;
+	height: 110px; 
+	background-image: url(../images/header0560.jpg);
+
+	h1 {}
+	img {padding: 1rem 0 .5rem 2%; display: block;}
+	h1, h2 {color: #fff; text-shadow:5px 5px 10px gray; margin-left: $gutter; padding-left: $gutter; font-weight: $normalWeight;} //end h1
+	h1{font-size: 3rem; padding-top: 10px; margin-bottom: .25em;} //end h1
+	h2{font-size: 1.75rem;} //end h2
+} // end header
+
+
+
+/* NAVigation  */
+div.smallNavBar{
+	background-color: $menuColor;
+}
+
+nav{
+	@include gradient($menuColor, #fff);
+	margin: 0 auto;
+	height: 100vh;
+	width: 100%;
+	background-color: $menuColor;
+	ul li a{
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		width: 100%;
+		padding: .6rem 2%;
+		border-bottom: solid 1px rgba(0,0,0,0.3);
+	}
+ul li ul li a{padding-left:8%;}
+ul li.active a {background-color: $secondaryColor}
+}//----------end NAV
+
+.ham{
+	display: block;
+	width: 7rem;
+	height: 2.75rem;
+	background-color: $secondaryColor;
+	background-repeat: no-repeat;
+	background-position: 2vw center;
+}//end HAMOPEN
+
+.hamOpen{
+	@extend .ham;
+	background-image: url(../images/menuOpenWhite.png);
+}//END HAMOPEN
+
+.hamClose{
+	@extend .ham;
+	background-image: url(../images/menuCloseWhite.png);
+}//end HAMCLOSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN  */
+main {
+	padding: 0 0;
+	max-width: 64rem;
+	margin: auto;
+	h1 {
+		font-size: 2.5rem;
+		margin: 0 0 .75em $gutter;
+		color: $secondaryColor;
+	} // end h1
+	
+	
+	p {
+		line-height: 130%;
+		margin: .25rem $gutter 0 $gutter;
+		font-family: $mainFont;
+	} // end p
+	figure.w100 img {width: 100%;}
+	figure.w100 {width: 100%;}
+	.box { 
+		margin-top: 1rem;
+		padding: 2rem 2%; 
+		text-align: center; 
+		line-height: 140%;
+		font-size: 2rem; 
+		color: #fff;
+	} // end box
+	.boxA {@extend .box; background-color: $primaryColor;}
+	.boxB {@extend .box; background-color: $secondaryColor;}
+	.box span {display: block; font-size: 1rem; line-height: 120%;}
+} // end main
+
+
+
+/* ---------------SLICK SLIDER------------ */
+div.mySlider div{
+	width: 100%;
+
+	img{
+		width: 100%;
+	}
+}//end mySlider
+
+
+/* ----------------PLAN YOUR VISIT----------------- */
+div.plan{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto;
+	justify-items: center;
+	align-items: center;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+
+	transition: all 8s ease-in;
+	.places{
+		width: 80%;
+		background-color: $primaryColor;
+		padding: 3rem;
+		h1, h2{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		
+	}
+}/* end plan */
+
+.planVisit{
+	font-family: $defaultFont;
+	width: 80%;
+	margin: 0 auto;
+	position:relative;
+	background-color: $primaryColor;
+	
+	img{
+	opacity: 0;
+	display: block;
+	width:100%;
+	height: auto;
+	transition: .5s ease;
+	}
+	.title{
+	position: absolute;
+	top:45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	font-size: 60px;
+	color:#fff;
+	white-space: nowrap;
+	overflow: hidden;
+	a{
+		font-size: 24px;
+		display: block;
+		text-align: center;
+		padding: 10px;
+		word-break: break-all;
+		cursor: pointer
+		}
+	}//end .title
+	
+	.overlay{
+	opacity: 1;
+	}
+	h1{
+		margin: 0;
+	}
+	h2{
+		font-size: 24px;
+		font-family: $defaultFont;
+	}
+}//end .planVisit
+	.planVisit:hover {
+		img{
+			opacity: 1;
+			}
+		.overlay{
+			opacity: 1;
+			}
+		.title{opacity: 0;}
+	}
+	
+ 
+	
+
+
+
+
+
+
+
+
+/* FOOTER  */
+footer {
+	max-width: 64rem;
+	padding: .5em;
+	margin: 1em auto;
+	background-color: $menuColor;
+	color: $thirdColor;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
