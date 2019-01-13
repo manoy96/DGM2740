@@ -83,16 +83,16 @@ nav{
 			ul li ul li a{padding-left: 8%;}
 			
 			button {
-    		    background-image: url(../images/menuIconWhite.png);
+				background-image: url(../images/menuIconWhite.png);
 				background-repeat: no-repeat;
 				width: 72px;
 				height: 32px;
-    		    background-color: rgba(0,0,0,0.1);
-    		    background-size: 86%;
+				background-color: rgba(0,0,0,0.1);
+				background-size: 86%;
 				background-position: center center;
-    		    border: 1px solid rgba(0,0,0,0.2);
+				border: 1px solid rgba(0,0,0,0.2);
 				border-radius: 10px;
-    		    margin: 6px 0 6px $gutter;
+				margin: 6px 0 6px $gutter;
 			}/*end button*/
 			
 			ul.closed {display: none;}

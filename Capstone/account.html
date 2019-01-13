@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Cinema On Demand</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<!--GOOGLE FONT-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Rajdhani:300,400,500" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
+     
+</head>
+<body>
+<!-- HEADER STARTS HERE -->
+	<header>
+		<div class="header">
+				<img src="images/cinema_logo.png" alt="logo">
+				<div class="titleSlogan">
+    				<h1>Cinema</h1>
+						<h2>On Demand</h2>
+				</div>
+			
+		</div>
+    </header>
+    
+    
+    
+		<nav class="clearfix">
+				<div class="navigation">
+					<button id="hamburgerBtn"></button>
+						 <ul id="primaryNav" class="closed">
+						<li>
+							<a href="index.html">
+								<span><i class="fas fa-tags"></i>CATEGORIES</span>
+							</a>
+						</li>
+							<li>
+								<a href="search.html">
+									<span><i class="fas fa-search"></i>SEARCH</span>
+								</a>
+						</li>
+						<li class="active"><a href="account.html"><span><i class="fas fa-cogs"></i>ACCOUNT</span></a>
+							<ul>
+								<li><a href="#">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--end navigation-->
+			</nav><!--end nav-->
+    
+    
+<!-- MAIN STARTS HERE -->
+	<main>
+
+    <h1 class="subTitle">Account</h1>
+    
+    <div class="account">
+
+      <div class="personal">
+        <h2>Personal Information</h2>
+
+        <h3>Full Name</h3>
+				<input type="text" name="firstName" placeholder="Manuel Espinoza">
+				<h3>Username</h3>
+        <input type="text" name="firstName" placeholder="mfe96">
+        <h3>Address</h3>
+        <input type="text" name="address" placeholder="563 S 600 E Santaquin, UT 84655">
+        <h3>Phone</h3>
+        <input type="tel" name="phone" placeholder="(801)724-1381">
+        <button class="acctBtn"><a href="#"><span>Update Information</span></a></button>
+      </div>
+
+      <div class="payment">
+        <h2>Payment Information</h2>
+
+        <h3>Name on Card</h3>
+        <input type="text" name="name" placeholder="Manuel Espinoza">
+        <h3>Card Number</h3>
+        <input type="number" name="card" placeholder="*1234">
+        <h3>Expiratoin Date</h3>
+        <input type="date" name="expire" placeholder="01/2018">
+        <h3>Billing Zipcode</h3>
+        <input type="number" name="zipcode" placeholder="84655">
+        <button><a href="#"><span>Update Information</span></a></button>
+      </div>
+
+    </div><!-- end account -->
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+	</main>
+	
+	<footer>
+		<div class="footer">
+			<p>&copy; 2018 Manuel Espinoza</p>
+		</div>
+	</footer>
+
+	<!-- PHONE MENU HIDER -->
+	<script src="js/menuToggle.js"></script>
+</body>
+</html>

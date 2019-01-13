@@ -1,0 +1,42 @@
+/*HEADER*/
+header{
+	background-color: $secondaryColor;
+.header{
+	max-width: 75rem;
+	margin: 0 auto;
+	width: 100%;
+}
+}
+
+/* NAVIGATION STYLES */
+nav{
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    li{
+      a{
+      list-style-type: none;
+      text-decoration: none;
+      
+      }
+      
+    }
+  }/* end UL */
+}/* END NAV */
+
+
+/*MAIN*/
+main{
+	max-width: 75rem;
+	
+	
+	.newReleases{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.category{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	
+}/*end MAIN*/

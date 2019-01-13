@@ -1,0 +1,142 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY */
+body{
+  font-size: 16px;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $text;
+  background-color: #fff;
+}/* end body */
+
+/* WRAPPER */
+.wrapper{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}/* end wrapper */
+
+/* HEADER */
+header{
+  background-color: $primaryColor;
+  color: #fff;
+  padding: .5rem $gutter;
+  font-size: 1.5rem;
+}/* end header */
+
+/* NAVIGATION */
+nav{
+  background-color: $secondaryColor;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  border-top: 1px solid $thirdColor;
+  display: flex;
+
+  div{
+    flex-basis: 33.33%;
+    text-align: center;
+    border-right: 1px solid $thirdColor;
+  }//end div
+  div a{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+    padding: .5rem 0;
+    color: $thirdColor;
+    text-decoration: none;
+    span.navTitle{display: none;}
+  }
+  div.active a{
+    background-color: $primaryColor;
+    color: #fff;
+  }
+
+}/* end nav */
+
+
+
+/* MAIN */
+main.locations{
+  h1{font-size: 36px; font-family: $defaultFont; margin: 1rem $gutter;}
+
+
+  .myLocations{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
+    grid-row-gap: 10px;
+    margin: 0 0 5rem 0;
+
+  
+  div.hotel{
+    width: 100%;
+    height: auto;
+    padding: .75em;
+    
+    background-color: $primaryColor;
+
+    figure{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      a{
+        width: 95%; 
+        height: 90%; 
+        display: flex; 
+        justify-content: center;
+        position: relative;
+        span{
+          position: absolute;
+	      	display: block;
+	      	bottom: 0;
+	      	background-color: rgba(0,0,0,0.3);
+	       	width: 100%;
+	      	padding: .3rem 2%;
+	      	color: white;
+	      	font-size: 1.5rem;
+        }
+      }
+      img{width: 100%; height: 100%; border-radius: 7px;}
+      figcaption{
+        position: absolute;
+        bottom: 8px;
+        left: 16px; padding: .2rem 0; color: $secondaryColor;}
+    }/* end figure */
+    .info{
+      margin: .5em 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 20px;
+      p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color:$secondaryColor;
+        font-family: $mainFont;
+        span{
+          font-size:2.7rem;
+          margin: 0 .5em;
+        }
+      }
+    }
+  }/* end div */
+  }/* end myLocations */
+
+
+
+
+
+
+
+
+
+
+
+}/* end main */

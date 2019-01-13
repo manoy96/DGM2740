@@ -1,0 +1,152 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+}
+
+
+/* HEADER  */
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h1 {
+		font-size: 36px;
+		font-family: $defaultFont;
+		padding: .5em;
+	}
+	img {padding: 1rem 0 .5rem 2%; display: block;}
+	border-bottom:solid 1px $primaryColor;
+} // end header
+
+nav{
+ul li.active a {background-color: $secondaryColor}
+}//----------end NAV
+
+
+
+
+/* MAIN  */
+main {
+	padding: 1rem 0;
+	h1 {font-size: 2.5rem; color: $primaryColor; padding-left: 2%;}
+	p{
+		font-size: 16px; 
+		margin: .5em $gutter;
+		progress{margin: 0 .4em;}
+	}
+	figure.w100 img {width: 100%;}
+	figure.w100 {width: 100%;}
+	.box { 
+		margin-top: 1rem;
+		padding: 2rem 2%; 
+		text-align: center; 
+		line-height: 140%;
+		font-size: 2rem; 
+		color: #fff;
+	} // end box
+	.boxA {@extend .box; background-color: $primaryColor;}
+	.boxB {@extend .box; background-color: $secondaryColor;}
+	.box span {display: block; font-size: 1rem; line-height: 120%;}
+} // end main
+
+form#conference{
+	margin: 1em $gutter;
+}
+fieldset{
+	background-color: $secondaryColor;
+	border-radius: .8em;
+	margin: 1.5em 0;
+	border: $primaryColor solid 1px;
+}
+legend{
+	color: $thirdColor;
+	padding: .5em;
+	margin-left: 3 * $gutter;
+	border: $primaryColor solid 1px;
+	background-color: $primaryColor;
+	border-radius: .4em;
+}
+label{
+	display: block;
+	margin: .5em;
+	span{
+		display: block;
+		font-size: .8em;
+		color: $primaryColor;
+		padding: .9em 0 .2em 0;
+	}
+}
+input.subBtn{
+	-webkit-appearance: none;
+	color: $secondaryColor;
+	border: solid 1px #111;
+	border-radius: 7px;
+	width: 50%;
+	margin: .5em 0;
+	font-size: 1em;
+	padding: .6em;
+	background:$primaryColor;
+	box-shadow: 4px 4px 10px #666;
+}
+/* NEW HTML5 VALIDATION */
+label input{
+	background-color: #f4f2ef;
+	color: $thirdColor;
+	padding: .3em .3em .3em 2em;
+	border: solid 1px $thirdColor;
+	border-radius: 5px;
+	font-size: .9em;
+	width: 90%;
+	max-width: 500px;
+	background-image: url(../images/validation.png);
+	background-repeat: no-repeat;
+	background-position: 4px -11px;
+
+	
+}
+.radio {
+	width: 15%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+/* input the currently has the focus */
+input:focus {
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5) inset;
+}
+/* identifies all required fields */
+
+
+input:required{/* shows orange border */
+	background-position: 4px -61px;
+}
+input:focus:invalid{
+	background-position: 4px -111px;
+}
+input:focus:valid{
+	background-color: #fff;
+	background-position: 4px -161px;
+}
+
+
+/* FOOTER  */
+footer {
+	background-color: $menuColor;
+	color: $secondaryColor;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

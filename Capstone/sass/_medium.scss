@@ -1,0 +1,171 @@
+/* NAVigation  */
+nav{
+  width: 100%;
+  position: relative;
+	height: 45px;
+	/* navigation */
+	.navigation{
+		height: 45px;
+		display: flex; 
+		justify-content: flex-end;
+		align-content: center;
+	}
+  
+	ul.closed {
+    display:flex;
+		justify-content: flex-end;
+		align-content: center;
+  }
+	button {display: none;}
+	
+	ul {
+		display: flex;
+		align-items: center;
+	}
+	
+	ul li{
+		height: 100%;
+		width: 100%;
+		display: flex;
+		align-content: center;
+		
+  }
+	ul li.active a{
+		width: 100%;
+		height: 100%;
+	}
+	ul li a {
+		height: 100%;
+		width: 100%;
+    padding: .5rem 2rem;
+		border: none;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    font-size: 14px;
+      font-family: $defaultFont;
+      font-weight: $lightWeight;
+			color: $accent;
+			
+		display: flex;
+		align-content: center;
+  }
+  ul li a.last{padding: 0;}
+  ul li a i{font-size: 18px; margin-right: .25rem;}
+	ul li a:last-child{border-right: none;}
+	ul li a span {
+		height: 100%;
+		color: $accent;
+		display: flex;
+		align-items: center;
+	}
+	ul li a:hover{background-color: darken($back, 10%);}
+	
+	ul li ul {
+		left: -999em;
+		z-index: 99;
+		background-color: lighten($primaryColor, 10%);
+		position: absolute;
+		top: 45px;
+		width: 10rem;
+	}
+	
+	ul li:hover ul {
+		left:auto;
+	}
+	
+	ul li ul li {
+		float: none;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+	
+}/*end navigation*/
+	
+	
+
+
+
+/* HEADER  */
+header {
+	margin-top: 0;
+	
+	.header{
+		
+		flex-direction: row;
+	
+	input[type=text] {
+		height: 40px;
+    	width: 30%;
+		padding-left: 5px;
+		border-radius: 10px;
+    	-webkit-transition: width 0.4s ease-in-out;
+    	transition: width 0.4s ease-in-out;
+		align-self: flex-end;
+	}
+	input[type=text]:focus {
+		height: 35px;
+    	width: 40%;
+	}
+
+	.social{
+		display: block;
+		font-size: 36px;
+		margin-left: auto;
+		margin-right: $gutter;
+		a {
+			margin: 0 .35rem;
+			text-decoration: none;
+			color: darken($back, 10%);
+		}
+	}
+
+
+	}
+}
+
+/* MAIN  */
+main {
+	h1.subTitle{
+		text-align: left;
+	}
+	
+	.newReleases{
+		grid-template-columns: 1fr 1fr;
+		margin-right: 1rem;
+			.myRelease{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+	}
+	
+	.category{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.search{
+		flex-direction: row;
+	}
+	.filter{
+		padding: 1.5rem .5rem;
+	}
+	.toggle{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.account{
+		display: flex;
+		justify-content: space-evenly;
+
+		.personal, .payment{
+			width: 50%;
+			margin: 2rem $gutter;
+		}
+	}
+	button{
+		width: 95%;
+		margin: .5rem $gutter;
+	}
+
+	
+	
+} // end main

@@ -1,0 +1,242 @@
+@mixin pageWidth($width){
+  max-width: $width;
+  margin: 0 auto;
+}
+
+@mixin fullwidth(){
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+@mixin bbh2($color){
+  font-size: 26px;
+  color: $color;
+  font-family: $defaultFont;
+  font-weight: $lightWeight;
+  margin-bottom: .65em;
+}
+
+/* HEADER STYLES */
+header{
+  @include pageWidth(940px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  border-bottom: 1px solid $accent;
+  .titleSlogan{margin-left: 3px;}
+  // h1{
+  //   @include bbh2($primaryColor); 
+  //   font-size: 36px;
+  //   font-weight: $boldWeight;
+  //   margin-bottom: 0;
+  // }
+  // h2{
+  //   @include bbh2($accent);
+  //   margin-bottom: 0;
+  //   font-size: 16px;
+  //   letter-spacing: 14px;
+  // }
+}
+
+
+
+
+/* NAVIGATION STYLES */
+nav{
+  @include pageWidth(940px);
+  height: 32px;
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    li{
+      margin-left: 24px;
+      a{
+      list-style-type: none;
+      text-decoration: none;
+      
+      }
+      
+    }
+  }/* end UL */
+}/* END NAV */
+
+
+
+/* MAIN STYLES */
+main{
+  
+
+
+    //CONTENT
+    .content{
+      @include pageWidth(940px);
+      font-family: $defaultFont;
+      
+      h1{
+        font-size: 32px;
+        color: $primaryColor;
+        font-weight: $normalWeight;
+        border-bottom: 1px solid $accent;
+        margin: 1.75em 0 0 0;
+      }
+      // p{
+      //   color: $accent;
+      // }
+      .banner{
+        margin-bottom: 1em;
+      }
+
+      .about{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        margin: 1rem 0 1.5rem 0;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $accent;
+
+        h2{
+          @include bbh2($primaryColor);
+          margin-top: .65em;
+        }
+        
+        
+
+      }
+      .graphs{
+        @include pageWidth(940px);
+        // width:100%;
+        margin: 0 auto;
+        flex-direction: row;
+        
+        .leftBox{
+          width: 75%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          
+          h2{@include bbh2($primaryColor);}
+          .news, .tech, .live{
+            h2, p{margin:.65rem 0;}
+          }
+            .news{
+              width: 44%;
+              margin: 0 2.5% 2.5% 0;
+            }
+            .tech{
+              width: 44%;
+              margin: 0 2.5% 2.5% 2.5%;
+            }
+            .live{
+              width: 95%;
+              margin: 2.5% 0 2.5% 0;
+            }
+        }
+        .rightBox{
+          background-image: url(../images/Grapg.png);
+          background-size: 100% 100%;
+          height: 439px;
+          width: 25%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          button{
+            margin-bottom: 1.5rem;
+            padding: .25rem 20%; 
+            background-color: $primaryColor;
+            color: #ffffff;
+            border-radius: 10px;        
+          }
+          p{
+            margin-bottom:1rem;
+            font-size: 13px;
+            color: $accent;
+            
+          }
+        }
+      }
+
+      .sponsor{
+        background-color: #ffffff;
+        padding:.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+
+      }
+
+    }/* END CONTENT */
+}/* end MAIN */
+
+    .fullScreen{
+      background-color: #111118;
+      color: #ffffff;
+      .cta{
+        @include pageWidth(940px);
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        align-items: center;
+        padding:1.5em 0 2em 0;
+        font-family: $defaultFont;
+        h2{
+          @include bbh2($secondaryColor);
+        }
+        p{
+          font-size: 14px;
+          color: #ffffff;
+          font-weight: $normalWeight;
+          font-style: oblique;
+          margin: 0 .5em 2em 0;
+        }
+        ul{
+          margin: 0 0 0 5.5em;
+          list-style-type: disc;
+        }
+
+        .formula{ 
+          justify-self: flex-end;
+        
+          h3{
+            text-align: right;
+            font-size: 20px;
+            color: #ffffff;
+            font-style: normal;
+            font-weight: normal;
+            margin-bottom: .25em;
+          }
+          h1{
+            text-align: right;
+            font-size: 36px;
+            color: $secondaryColor;
+            font-style: oblique;
+            font-weight: bold;
+            margin-top: .4em;
+          }
+        }
+      }
+    }
+
+
+
+
+
+/* FOOTER STYLES */
+footer{
+  background: linear-gradient($primaryColor, #013f63);
+  .myFooter{
+    height: 50px;
+    @include pageWidth(940px);
+    color: #ffffff;
+    font-size: 16px;
+    font-family: $defaultFont;
+    font-weight: $boldWeight;
+    display: flex;
+    align-items: flex-start;
+    p{margin-bottom: .25em;}
+  }//end .myFooter
+}//END FOOTER

@@ -1,0 +1,30 @@
+main.locations{
+
+
+  .myLocations{
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  }/* end myLocations */
+
+
+
+}/* end main */
+
+
+
+
+
+/* NAVIGATION */
+nav{
+
+div{
+  a{
+    span.navTitle{
+      display: block;
+    }
+  }
+}
+
+
+
+}/* end nav */

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Swag Shop</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+
+
+     
+</head>
+<body>
+
+<!-- HEADER STARTS HERE -->
+	<header>
+   	<img src="images/logo.png" alt="">
+    	<h1>Swag Merchandise</h1>
+    </header>
+    
+    
+<!-- NAV STARTS HERE -->
+	<nav class="clearfix">
+  	<button id="hamburgerBtn"></button>
+   		<ul id="primaryNav">
+			<li><a href="index.html">TODAY'S DEALS</a></li>
+			<li class="parent"><a href="#">COMPANY MERCH</a>
+				<ul>
+					<li><a href="#">Shirts</a></li>
+					<li><a href="#">Key Chains</a></li>
+					<li><a href="#">Luggage Tags</a></li>
+					<li><a href="#">Hats</a></li>
+				</ul>
+			</li>
+			<li class="parent"><a href="#">CONSUMER MERCH</a>
+				<ul>
+					<li><a href="#">Shirts</a></li>
+					<li><a href="#">Hats</a></li>
+					<li><a href="#">Party Items</a></li>
+				</ul>
+			</li>
+			<li class="parent"><a href="#"> COMPANY INFO</a>
+			<ul>
+					<li><a href="index.html">Contact</a></li>
+					<li><a href="index.html">Careers</a></li>
+				</ul>
+			</li>
+			<li><a href="#">CART</a></li>
+			<li class="active"><a href="#">CHECKOUT</a></li>
+		</ul>	
+	</nav>
+
+    
+    
+<!-- MAIN STARTS HERE -->
+	<main>
+
+<div id="content" class="clearfix">
+
+
+<h1>Checkout</h1>
+
+	<div class="row">
+		<div class="left">
+
+			<p>progress<progress value="5" max="100"></progress></p>
+
+		<form action="" method="POST" enctype="multipart/form-data" name="attend" id="conference">
+
+			<fieldset>
+				<legend><span>Personal Information</span></legend>
+			<label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label> 
+			<label><span>Email:</span><input name="email" type="email" value="" placeholder="name@mail.com"></label> 
+			<label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10,20}" required></label> 
+			</fieldset>
+
+			<fieldset>
+					<legend><span>Swag Info</span></legend>
+				<label><span>Company Name:</span><input name="company" type="text"></label> 
+				<label><span>Website:</span><input name="webURL" type="url" placeholder=""></label> 
+				<label><span>Quantity:</span><input name="quantity" type="number"></label> 
+				
+				<label><span>Material Color:</span><input name="matColor" type="color"></label> 
+				<label class="radio"><span>Material:</span></label> 
+				<label class="radio"><input name="material" type="radio" value="metal">Metal</label>
+				<label class="radio"><input name="material" type="radio" value="plastic">Plastic</label>
+				</fieldset>
+
+
+
+				<fieldset>
+					<legend><span>Payment</span></legend>
+					<label><span>Credit Card:</span><input name="credit" type="number" autocomplete="off" required></label> 
+					<label><span>Name on Card:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label> 
+					<label><span>Expiration Date:</span><input name="exprDate" type="date"></label> 
+				</fieldset>
+
+				<input type="submit" value="Place Order" class="subBtn">
+
+				<input type="hidden" value="Conference Registration" name="subject">
+				<input name="redirect" type="hidden" value="thanks.html">
+
+			
+
+
+
+
+
+
+
+
+
+
+		</form>
+		
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- end content -->
+	</main>
+    
+<!-- FOOTER STARTS HERE -->  
+    <footer>
+    <p>&copy; 2018 Manuel Espinoza</p>
+    </footer>
+    
+
+	
+<script src="js/menuToggle.js"></script>
+</body>
+</html>
